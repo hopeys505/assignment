@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage{preamble}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+
+\title{}
+\pagestyle{fancy}
+\linespread{1}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\ifthenelse{\value{page}=0}{}{}}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\begin{flushright}
+\includegraphics[width=0.3\textwidth]{images/usydNew.png}\\[2cm]
+\end{flushright}
+
+\center 
+
+\textsc{\LARGE The University of Sydney}\\[0.75cm]
+\textsc{\Large School of Mathematics and Statistics}\\[1cm]
+
+\textsc{\Large}\\[0.25cm] 
+\textsc{\large }\\[1cm] 
+
+\HRule \\[0.4cm]
+{ \huge \bfseries MATHXXX: Course Name}\\[0.4cm] 
+{\Large Course Notes}\\[0.4cm]
+\HRule \\[1.25cm]
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+\textsc{Author's Name}\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large\emph{}\\
+\end{flushright}
+\end{minipage}\\[1.5cm]
+
+{\large \today}\\[1.5cm]
+
+\vfill
+
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+\cfoot{}
+\rhead{}
+\thispagestyle{fancy}
+\pagestyle{fancy}
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\begin{flushleft}
+\section*{Section title}
+\addcontentsline{toc}{section}{\protect\numberline{}Section title}
+    % Each of the boxed environments needs a title, then a reference. Leave these blank if you don't want them.
+    \begin{thm}{My first theorem}{my_1st_thm_reference}
+        This is my first theorem!
+    \end{thm}
+    
+    \begin{defn}{My first definition}{my_1st_def_reference}
+        This is my first definition.
+    \end{defn}
+    
+    \begin{fact}{My first fact}{my_1st_fact_reference}
+        This is my first fact.
+    \end{fact}
+    
+    \begin{rk}{My first remark}{my_1st_rk_reference}
+        This is my first remark.
+    \end{rk}
+    
+    \begin{cor}{My first corollary}{my_1st_corollary}
+        This is my first corollary.
+    \end{cor}
+    % The example, solution and proof environments are not boxed and do not accept names/reference names as arguments.
+    \begin{example}
+        This is an example.
+    \end{example}
+    
+    \begin{proof}
+        This is a proof.
+    \end{proof}
+    
+    \begin{soln}
+        This is a solution
+    \end{soln}
+\newpage
+\fancyhead{}
+\end{flushleft}
+\end{document}
